@@ -5,7 +5,8 @@ libros = [
 {"titulos": "Fanhrenteit 365","autor": "Anonimo","anio": "XXXX","paginas":"299"}
 ]
 
-
+print(libros)
+print(type(libros))
 cadena = json.dumps(libros) #volca y convierte en json
 print(cadena) # lista en memoria
 print(type(cadena)) #tipo de las variables
