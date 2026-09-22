@@ -5,4 +5,3 @@ for campo in tupla:
  cadena += campo + ","
 archivo.write(tupla)
 archivo.close()
-

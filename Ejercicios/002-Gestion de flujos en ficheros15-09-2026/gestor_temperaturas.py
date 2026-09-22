@@ -2,23 +2,21 @@ NOMBRE_FICHERO_TEMPERATURAS = "temperaturas.txt"
 NOMBRE_FICHERO_CONTADOR = "contador.bin"
 
 def escribir_temperaturas():
-  print("1.")
+  print("1.escribir_temperaturas")
   flujo = open(NOMBRE_FICHERO_TEMPERATURAS, "w")
-  flujo.write("Primera línea\n")
-  flujo.write("Segunda línea\n")
-  flujo.write("Tercera línea\n")
+  flujo.write("Primera línea\nSegunda línea\nTercera línea\n")
   flujo.close()
-  print(f"Se ha escrito '{NOMBRE_FICHERO_TEMPERATURAS}' correctamente.") 
  
  
 def leer_temperaturas():
-  print("2.")
+  print("2.leer_temperaturas")
   flujo = open(NOMBRE_FICHERO_TEMPERATURAS, "r")
   contenido = flujo.read()
   flujo.close()
   print(contenido)
 
 def saltar_primera_temperatura():
+    print("3.saltar_primera_temperatura")
     flujo = open(NOMBRE_FICHERO_TEMPERATURAS, "r")
     flujo.readline() 
     posicion = flujo.tell()
